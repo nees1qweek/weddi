@@ -1,0 +1,50 @@
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    background: linear-gradient(45deg, #EECFBA, #0905FF);
+    font-size: 50px;
+    width: 10%;
+    display: block;
+    height: 35%;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+
+ }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+   /* background: linear-gradient(45deg, #F70707, #0905FF);*/
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 20s ease-out;
+    display: block;
+     width: 35%;
+     position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
+}
+.center {
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    
+    width: 75%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
